@@ -2,11 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px dotted black
+    /*border: 1px dotted black*/
 }
 :root{
     --colore-principale: ;
     --margine-vbase: 30px;
+    --grigio: rgb(153, 153, 153);
 }
 /*------------------------------nav top------------------------------*/
 header {
@@ -91,11 +92,40 @@ h1 {
 }
 /*--------------------sezione 1-----------------------*/
 #sezione-1{
-    margin: 120px 0;
-}
+    margin: 120px auto;
+    width: 1200px;
+    }
 .selettore{
     display: flex;
 }
 .selettore span{
     margin-right: var(--margine-vbase);
+}
+
+/*-------------------------piani tariffari------------------------*/
+.container-piani{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tariffa{
+    border: solid 1px var(--grigio);
+    width: 350px;
+    /*height: 800px;*/
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tariffa ul li{
+    list-style: none;
+    margin: 20px 5px;
+    padding: 0 2rem;
+}
+.tariffa div:nth-child(1){
+    border-bottom:1px var(--grigio) solid;
+}
+.essenziali :nth-child(3){
+    color: var(--grigio);
 }
