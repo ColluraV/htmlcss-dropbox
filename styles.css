@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px dotted black
+    /*border: 1px dotted black*/
 }
 :root{
     --colore-principale: #0061FE;
@@ -168,11 +168,23 @@ h1 {
 }
 .team-data{
     width: 100%;
-    height: 100%;
-    background-color: aquamarine;
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
 }
 
-.td-left{}
+.td-left{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 40px;
+}
+
+#end{
+    margin: 100px 0px;
+}
+.td-left div, .td-left h3{
+    margin-bottom: 20px;
+    text-align: left;
+}
+.td-right{
+    margin: 40px 40px;
+}
