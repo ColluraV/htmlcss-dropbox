@@ -2,19 +2,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
     font-family: sans-serif;
+    
 }
-:root{
+
+:root {
     --colore-principale: #0061FE;
     --margine-vbase: 80px;
-    --grigio: rgba(222, 219, 219, 0.924);
+    --grigio: rgba(207, 207, 207, 0.924);
 }
+
 /*body{
     width: 100vw;
 }*/
-button{
-    background-color: var(--colore-principale) ;
+button {
+    background-color: var(--colore-principale);
     border-color: var(--colore-principale);
     height: 2rem;
     width: 13rem;
@@ -28,11 +31,13 @@ h1 {
     margin: var(--margine-vbase) auto;
     padding: 0px 5rem;
 }
-h2{
+
+h2 {
     font-size: 45px;
     margin: 100px 0px;
     text-align: left;
 }
+
 /*------------------------------nav top------------------------------*/
 header {
     display: flex;
@@ -71,7 +76,7 @@ header {
 /*---------------- hero section------------------*/
 
 .jumbo {
-    
+
     display: flex;
     justify-content: center;
     margin: var(--margine-vbase) auto;
@@ -87,10 +92,11 @@ header {
     flex-direction: column;
     justify-content: space-between;
     width: 28rem;
+
 }
 
 .hero {
-    background-color:#b4d0e7;
+    background-color: #b4d0e7;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -100,74 +106,97 @@ header {
 .r-jumbo {
     height: 28rem;
 }
-.fa-solid.fa-arrow-down{
+
+.fa-solid.fa-arrow-down {
     font-size: 45px;
 }
-.l-jumbo,.r-jumbo{
+
+.l-jumbo,
+.r-jumbo {
     padding-top: var(--margine-vbase);
 }
+.l-jumbo p, .l-jumbo span {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
 /*--------------------sezione 1-----------------------*/
-#sezione-1{
+#sezione-1 {
     margin: 120px auto;
     width: 1200px;
-    }
-.selettore{
+}
+
+.selettore {
     display: flex;
 }
-.selettore span{
+
+.selettore span {
     margin-right: var(--margine-vbase);
 }
 
 /*-------------------------piani tariffari------------------------*/
-.container-piani{
+.container-piani {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: var(--margine-vbase);
 }
 
-.tariffa{
+.tariffa {
     border: solid 1px var(--grigio);
-    width: 380px;
+    width: 370px;
     /*height: 800px;*/
     display: flex;
     flex-direction: column;
 }
 
-.tariffa ul li{
+.tariffa ul li {
     list-style: none;
 }
-.tariffa div:nth-child(1){
-    border-bottom:1px var(--grigio) solid;
+
+.tariffa div:nth-child(1) {
+    border-bottom: 1px var(--grigio) solid;
 }
-.essenziali :nth-child(3){
+
+.essenziali :nth-child(3) {
     color: var(--grigio);
 }
-.tariffa span, .essenziali :nth-child(2){
+
+.tariffa span,
+.essenziali :nth-child(2) {
     font-weight: bolder;
 }
-.tariffa span, .tariffa ul li, .tariffa button ~ div{
+
+.tariffa span,
+.tariffa ul li,
+.tariffa button~div {
     margin: 20px 0px;
     padding: 0 1rem;
 }
 
-.separè{
+.separè {
     width: 40px;
     border-bottom: 1px solid var(--grigio);
 }
-.tariffa div:first-child{
+
+.tariffa div:first-child {
     text-align: center;
     padding: 8px;
 }
-.tariffa button{ margin-left: 1rem;}
-.tariffa ul{
+
+.tariffa button {
+    margin: 0 auto;
+}
+
+.tariffa ul {
     margin-bottom: 1rem;
 }
-.fa-solid.fa-check{
+
+.fa-solid.fa-check {
     color: var(--colore-principale);
 }
 
-.team{
+.team {
     width: 1200px;
     height: 350px;
     margin: 0px 0px;
@@ -175,50 +204,58 @@ header {
     border: 1px solid var(--grigio);
     margin-top: var(--margine-vbase);
 }
-.team span:nth-child(1){
+
+.team span:nth-child(1) {
     line-height: 35px;
     border-bottom: 1px solid var(--grigio);
     width: 100%;
     display: inline-block;
 }
-.team-data{
+
+.team-data {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.td-left{
+.td-left {
     display: flex;
     flex-direction: column;
     margin: 40px 40px;
 }
 
-#end{
+#end {
     margin: 100px 0px;
 }
-.td-left div, .td-left h3{
+
+.td-left div,
+.td-left h3 {
     margin-bottom: 20px;
     text-align: left;
 }
-.td-right{
+
+.td-right {
     margin: 40px 40px;
 }
+
 /*-------------------------sezione 2------------------------*/
-.sezione2{
+.sezione2 {
     width: 1200px;
     height: 600px;
     display: flex;
     margin: auto;
 }
-.s2-left{
+
+.s2-left {
     background-image: url(img/partner.png);
     width: 600px;
     height: 600px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-y:center ;
+    background-position-y: center;
 }
-.s2-right{
+
+.s2-right {
     width: 300px;
     height: 300px;
     margin-left: 2rem;
@@ -232,5 +269,37 @@ header {
     width: 8rem;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    border:1px solid rgb(87, 87, 87);
+    border: 1px solid rgb(87, 87, 87);
+}
+/*-------------------------sezione 3------------------------*/
+.sezione3{
+    width: 1200px;
+    margin: var(--margine-vbase) auto;
+
+}
+.s3container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.s3item {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+
+}
+.sezione3 img{
+    width: 370px;
+}
+.s3item div , .s3item p{
+    padding: 1rem ;
+}
+.s3item p{
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    background-color: #b4d0e7 ;
+    color: black;
 }
