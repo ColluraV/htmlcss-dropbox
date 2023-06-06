@@ -6,7 +6,7 @@
 }
 :root{
     --colore-principale: ;
-    --margine-vbase: 20px;
+    --margine-vbase: 30px;
 }
 /*------------------------------nav top------------------------------*/
 header {
@@ -77,6 +77,7 @@ h1 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .r-jumbo {
@@ -89,3 +90,12 @@ h1 {
     padding-top: var(--margine-vbase);
 }
 /*--------------------sezione 1-----------------------*/
+#sezione-1{
+    margin: 120px 0;
+}
+.selettore{
+    display: flex;
+}
+.selettore span{
+    margin-right: var(--margine-vbase);
+}
