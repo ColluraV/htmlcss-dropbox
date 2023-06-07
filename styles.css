@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /*border: 1px dotted black;*/
+    border: 1px dotted black;
     font-family: sans-serif;
     
 }
@@ -13,9 +13,9 @@
     --grigio: rgba(207, 207, 207, 0.924);
 }
 
-/*body{
-    width: 100vw;
-}*/
+body{
+    min-width: 1520px;
+}
 button {
     background-color: var(--colore-principale);
     border-color: var(--colore-principale);
@@ -29,12 +29,12 @@ h1 {
     text-align: left;
     width: 95rem;
     margin: var(--margine-vbase) auto;
-    padding: 0px 5rem;
+    padding: 0px 4rem;
 }
 
 h2 {
     font-size: 45px;
-    margin: 100px 0px;
+    margin: 100px 1rem;
     text-align: left;
 }
 
@@ -74,12 +74,18 @@ header {
 
 /*------------------------------main------------------------------*/
 /*---------------- hero section------------------*/
+.hero {
+    background-color: #b4d0e7;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
 
 .jumbo {
 
     display: flex;
     justify-content: center;
-    margin: var(--margine-vbase) auto;
+
 }
 
 .r-jumbo img {
@@ -93,16 +99,8 @@ header {
     justify-content: space-between;
     width: 28rem;
 
-}
 
-.hero {
-    background-color: #b4d0e7;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
 }
-
 .r-jumbo {
     height: 28rem;
 }
@@ -111,10 +109,6 @@ header {
     font-size: 45px;
 }
 
-.l-jumbo,
-.r-jumbo {
-    padding-top: var(--margine-vbase);
-}
 .l-jumbo p, .l-jumbo span {
     font-size: 1.2rem;
     line-height: 1.8rem;
@@ -253,6 +247,7 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: center;
+    margin: 0 1rem;
 }
 
 .s2-right {
@@ -298,12 +293,79 @@ header {
     line-height: 1.4rem;
     font-size: 1.2rem;
 }
+/*-------------------------sezione 4------------------------*/
 
+.sezione4{
+    width: 100%;
+    margin: var(--margine-vbase) 0;
+}
+.intros4{
+    width: 1200px;
+    margin: var(--margine-vbase) auto;
+}
+.container-brands{
+    width: 100%;
+    display: flex;
+}
+.left-brands, .right-brands{
+    width: 33vw;
+    height: 33vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.brand-banner{
+    max-width: 34vw;
+    height: 33vw;
+    overflow: auto;
+    font-size: x-large;
+    background-color: aliceblue;
+}
+.brand-logo{
+    width: 50%;
+    height: 50%;
+    background-size:55%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.brand-logo.n1{
+    background-image: url(img/designit.svg);
+    background-color: rgb(130, 247, 119);
+}
+.brand-logo.n2{
+    background-image: url(img/arizona_state_university.svg);
+    background-color: rgb(110, 53, 53);
 
+}
+.brand-logo.n3{
+    background-image: url(img/university_of_florida.svg);
+    background-color: rgb(91, 203, 255);
 
+}
+.brand-logo.n4{
+    background-image: url(img/topps.svg);
+    background-color: rgb(255, 24, 24);
 
+}
+.brand-logo.n5 {
+    background-image: url(img/world_bicycle_relief.svg);
+    background-color: rgb(255, 80, 53);
 
+}
+.brand-logo.n6 {
+    background-image: url(img/hearst_corp.svg); 
+    background-color: rgb(197, 179, 252);
 
+}
+.brand-logo.n7 {
+    background-image: url(img/lonely_planet.svg);
+    background-color: rgb(32, 67, 182);
+
+}
+.brand-logo.n8 {
+    background-image: url(img/clear_channel.svg);
+    background-color: rgb(232, 227, 76);
+
+}
 
 
 
