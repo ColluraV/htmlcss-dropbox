@@ -320,7 +320,7 @@ header {
     font-size: x-large;
     background-color: aliceblue;
 }
-.brand-logo{
+.brand-logo{        /* ------           <---quadrato logo generico              -----------*/
     width: 50%;
     height: 50%;
     background-size:55%;
@@ -366,6 +366,19 @@ header {
     background-color: rgb(232, 227, 76);
 
 }
+#s4footer{
+    display: flex;
+    align-items: center;
+    min-width: 1200px;
+    margin:auto ;
+    background-color: #b4d0e7;
+
+}
+#s4footer h2, #s4footer button{
+    max-width:600px ;
+    margin: var(--margine-vbase) auto;
+}
+
 
 
 
