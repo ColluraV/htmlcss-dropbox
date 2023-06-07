@@ -139,7 +139,6 @@ header {
 .tariffa {
     border: solid 1px var(--grigio);
     width: 370px;
-    /*height: 800px;*/
     display: flex;
     flex-direction: column;
 }
@@ -189,7 +188,7 @@ ul {
 .fa-solid.fa-check {
     color: var(--colore-principale);
 }
-
+/*----------------------------------------banner orizzontale------------------------------------------*/
 .team {
     width: 1200px;
     height: 350px;
@@ -216,10 +215,12 @@ ul {
     display: flex;
     flex-direction: column;
     margin: 40px 40px;
+    width: 50%;
 }
 
 #end {
-    margin: 100px 0px;
+    padding-top: 80px;
+    text-align: left;
 }
 
 .td-left div,
@@ -231,19 +232,24 @@ ul {
 .td-right {
     margin: 40px 40px;
 }
+.td-right button{
+    font-size: 1.1rem;
+    height: 3rem;
+    width: 250px;
+}
 
 /*-------------------------sezione 2------------------------*/
 .sezione2 {
     width: 1200px;
-    height: 600px;
+    height: 700px;
     display: flex;
     margin: auto;
 }
 
 .s2-left {
     background-image: url(img/partner.png);
-    width: 600px;
-    height: 600px;
+    width: 800px;
+    height: 700px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -319,6 +325,7 @@ ul {
     overflow: auto;
     font-size: x-large;
     background-color: aliceblue;
+    padding:5%;
 }
 .brand-logo{        /* ------           <---quadrato logo generico              -----------*/
     width: 50%;
@@ -440,9 +447,6 @@ footer a {
     margin-left:auto;
     margin-right: auto;
  }
-
-
-
 /*---------------------------------hover button da tenere in fondo--------------------------------*/
 button:hover{
     background-color: #b4d0e7 ;
