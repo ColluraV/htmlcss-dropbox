@@ -188,6 +188,10 @@ ul {
 .fa-solid.fa-check {
     color: var(--colore-principale);
 }
+.tariffa li{
+    display: flex;
+    gap: 1rem;
+}
 /*----------------------------------------banner orizzontale------------------------------------------*/
 .team {
     width: 1200px;
@@ -312,16 +316,17 @@ ul {
 .container-brands{
     width: 100%;
     display: flex;
+    position: relative;
 }
 .left-brands, .right-brands{
-    width: 33vw;
-    height: 33vw;
+    width: calc(100% / 3);
+    aspect-ratio: 1/1;
     display: flex;
     flex-wrap: wrap;
 }
 .brand-banner{
-    max-width: 34vw;
-    height: 33vw;
+    max-width: calc(100% / 3);
+    aspect-ratio: 1/1;  
     overflow: auto;
     font-size: x-large;
     background-color: aliceblue;
@@ -385,7 +390,32 @@ ul {
     max-width:600px ;
     margin: var(--margine-vbase) auto;
 }
-
+.box-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: calc(100% /3);
+  width: calc(100%/ 3);
+  height: 100%;
+  background-color:  aliceblue;
+  overflow: 1;
+  flex-direction: column;
+  padding: 2rem;
+}
+.brand-logo:hover .box-content>.brand-logo {
+ background-color:  aliceblue;
+ width: 100%;
+}
+.brand-logo:hover .box-content{
+    display: flex;
+    font-size: 1.5rem;
+}
+.brand-logo:hover{ 
+    border: 5px solid var(--colore-principale);} 
+    
+.box-content .brand-logo{
+    border:0px;
+}
 /*------------------------------------------faq-------------------------------------------*/
 .ans{
     display: block;
